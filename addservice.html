@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Service</title>
+<link href="style.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header"><img src="images/search.png" style="float:left; " />
+  <form>
+  <input style="color:#fff; padding-top:5px; width:400px; background:transparent; border:none; height:45px; font-size:20px; margin-left:20px; padding-left:10px; border-bottom:#ccc 1px solid; margin-top:3px;" placeholder="What do you need to help your startup?" ></form>
+</div>
+  <div class="sidebar1">
+  <img src="images/fish.png" style="margin-left:22%" />
+    <ul class="nav">
+      <li><a href="#">Development Firms</a></li>
+      <li><a href="#">Lawyers</a></li>
+      <li><a href="#">Investors</a></li>
+      <li><a href="#">Accountants</a></li>
+      <li><a href="addservice.html" class="sidebar1a">Add a Service</a></li>
+    </ul>
+	</div>
+    <div class="content">
+    <div class="address">
+    <p class="left" style="color:#eee; font-size:26px;">Add a Service</p>
+    <a href="#" class="right"> Login</a>
+    <p class="right">|</p>
+    <a href="#" class="right"> Signup</a>    
+    </div>
+    <div class="content_service">
+    <ul id="nav">
+    <li><a href="#">Choose A Category</a>
+    <ul>
+      <li style="display:block; float:right;width: 0px; height: 0px; border: 11px solid rgba(0,0,0,0); border-bottom-color: #028482; margin-right: 15px;">
+      </li><br />
+      <li style="list-style:url(images/df.png) inside"><a href="#">Development Firms</a></li>
+      <li style="list-style:url(images/law.png) inside"><a href="#">Lawyers</a></li>
+      <li style="list-style:url(images/inv.png) inside"><a href="#" onclick="show()">Investors</a></li>
+      <li style="list-style:url(images/acc.png) inside"><a href="#">Accountants</a></li>
+    </ul>
+    </li>
+    </div>
+    <div id="form3">
+    <div id="button2" style="padding:0; margin:0; width:240px;">
+    <p style="text-align:center; margin-top:10px;">Investors</p>
+    </div>
+    <form>
+    <div class="left_form">
+    <input class="input" type="text" placeholder="Name of Investor/Firm*"/>
+     <input class="input" type="text" placeholder="Name of Investor/Firm*"/>
+    <input class="input" type="text" placeholder="Name of Investor/Firm*"/>
+    </div>
+    <div class="right_form">
+    <p style="color:#eee; font-size:20px; margin-top:4px">Would you like to write a review?</p>
+    <img src="images/rating.png" /><br />
+    <textarea class="reviewbox"></textarea>
+    </div>
+    <input type="submit" class="input" style="width:99%" />
+   </form>
+    </div>
+    </div>
+<script>
+function show() {
+    document.getElementById("form3").style.display = "inline-block";
+    document.getElementById("nav").style.display = "none";
+}
+</script>
+</body>
+</html>
